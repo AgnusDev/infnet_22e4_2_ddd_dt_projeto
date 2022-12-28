@@ -17,10 +17,10 @@ public class NumeroBemValidator {
 			NB.equals("777777777777777") ||
 			NB.equals("888888888888888") ||
 			NB.equals("999999999999999") ||
-			(NB.length() != 15))
-					
+			(NB.length() != 15));
+		
 		return (false);
-		return false;
+
 	}
 
 }
