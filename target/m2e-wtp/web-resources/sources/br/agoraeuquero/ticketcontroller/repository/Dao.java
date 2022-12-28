@@ -14,8 +14,8 @@ public class Dao {
 	public void open() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
 		con = DriverManager.getConnection(
-				"jdbc:mysql://209.172.51.58:3306/agoraeuq_tktctrl?useTimezone=true&serverTimezone=UTC",
-				"agoraeuq_cartp20", "null");
+				"jdbc:mysql://111.111.11.11:1111/null?useTimezone=true&serverTimezone=UTC",
+				"null", "null");
 	}
 
 	public void close() throws Exception {

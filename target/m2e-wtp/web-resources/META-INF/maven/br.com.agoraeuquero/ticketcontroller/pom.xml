@@ -19,144 +19,16 @@
 
 	<dependencies>
 
-		<!-- Front-end - Primefaces -->
-
-		<dependency>
-			<groupId>org.primefaces</groupId>
-			<artifactId>primefaces</artifactId>
-			<version>5.0</version>
-		</dependency>
-
-		<!-- Commons - -->
-
-		<dependency>
-			<groupId>commons-beanutils</groupId>
-			<artifactId>commons-beanutils</artifactId>
-			<version>1.8.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-collections</groupId>
-			<artifactId>commons-collections</artifactId>
-			<version>3.2.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-digester</groupId>
-			<artifactId>commons-digester</artifactId>
-			<version>2.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>1.1.1</version>
-		</dependency>
-
-		<!-- Java server Faces -->
-		<!-- Viabilização de taglibs em paginas jsp / jsf -->
-
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-
-		<!-- JSF Implementação -->
-
-		<dependency>
-			<groupId>com.sun.faces</groupId>
-			<artifactId>jsf-api</artifactId>
-			<version>2.2.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.sun.faces</groupId>
-			<artifactId>jsf-impl</artifactId>
-			<version>2.2.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.faces</groupId>
-			<artifactId>javax.faces-api</artifactId>
-			<version>2.2</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<!-- Importacao de dados de planilhas excel -->
-
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>3.10.1</version>
-		</dependency>
-
-		<!-- Persistencia -->
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.23</version>
-			<scope>
-			</scope>
-		</dependency>
-
-		<!-- Checar -->
-
-		<dependency>
-			<groupId>taglibs</groupId>
-			<artifactId>standard</artifactId>
-			<version>1.1.2</version>
-		</dependency>
-
+		
 	</dependencies>
 
 	<build>
 		<plugins>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.6.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.0.0</version>
-				<configuration>
-					<webResources>
-						<resource>
-							<directory>${project.build.sourceDirectory}</directory>
-							<targetPath>sources</targetPath>
-						</resource>
-					</webResources>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19.1</version>
-				<configuration>
-					<testFailureIgnore>true</testFailureIgnore>
-				</configuration>
-			</plugin>
 
 		</plugins>
 
-		<finalName>carrotop</finalName>
+		<finalName>ticketcontroller</finalName>
 
 	</build>
 
